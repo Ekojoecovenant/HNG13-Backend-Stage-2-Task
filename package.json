@@ -1,0 +1,38 @@
+{
+  "name": "hng13-backend-stage-2-task",
+  "version": "1.0.0",
+  "description": "RESTful API for country data with currency exchange rates",
+  "homepage": "https://github.com/Ekojoecovenant/HNG13-Backend-Stage-2-Task#readme",
+  "bugs": {
+    "url": "https://github.com/Ekojoecovenant/HNG13-Backend-Stage-2-Task/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ekojoecovenant/HNG13-Backend-Stage-2-Task.git"
+  },
+  "license": "MIT",
+  "author": "ekojoecovenant",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:migrate": "node src/database/migrate.js"
+  },
+  "keywords": [
+    "api",
+    "countries",
+    "exchange-rates",
+    "mysql"
+  ],
+  "dependencies": {
+    "axios": "^1.13.0",
+    "canvas": "^3.2.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mysql2": "^3.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

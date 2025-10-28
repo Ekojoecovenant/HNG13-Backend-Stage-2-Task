@@ -1,0 +1,34 @@
+@baseUrl=http://localhost:3003
+
+### 1. Refresh Coutries Data
+POST {{baseUrl}}/countries/refresh
+Content-Type: application/json
+
+###
+
+### 2. Get All Countries
+# GET {{baseUrl}}/countries
+# GET {{baseUrl}}/countries?region=Africa
+# GET {{baseUrl}}/countries?currency=NGN
+# GET {{baseUrl}}/countries?sort=gdp_desc
+GET {{baseUrl}}/countries?region=Africa&sort=gdp_desc
+
+###
+
+### 3. Get Country by Name
+GET {{baseUrl}}/countries/Nigeria
+
+###
+
+### 4. Delete Country
+DELETE {{baseUrl}}/countries/Nigeria
+
+### 
+
+### 5. Get System Status
+GET {{baseUrl}}/status
+
+###
+
+### 6. Get Summary Image
+GET {{baseUrl}}/countries/image
