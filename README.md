@@ -108,3 +108,11 @@ curl http://localhost:3000/countries/image --output summary.png
 # 7. Delete a country
 curl -X DELETE http://localhost:3000/countries/Nigeria
 ```
+
+## Dependencies
+
+- express = Web framework
+- mysql2 = MySQL client
+- dotenv = Environment variable management
+- axios = HTTP client
+- canvas = Image generation library
